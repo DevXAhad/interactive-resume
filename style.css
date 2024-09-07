@@ -1,0 +1,137 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Container for the entire resume */
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Header - Personal Info */
+.resume-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Personal Info Section */
+.personal-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #007bff;
+}
+
+.name {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Section styling for each resume section */
+.resume-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Section headings */
+.resume-section h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Skills Section */
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skills {
+  display: block; /* or 'none' if you want it hidden initially */
+}
+
+#skills li {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Toggle button styling */
+#toggle-skills {
+  display: block;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 0; /* Adjust margin as needed */
+  transition: background-color 0.3s;
+}
+
+#toggle-skills:hover {
+  background-color: #218838;
+}
+
+/* Work Experience Section */
+#work-experience p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .personal-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    margin-bottom: 15px;
+  }
+
+  .resume-section {
+    padding: 15px;
+  }
+
+  #toggle-skills {
+    padding: 8px 12px;
+  }
+}
